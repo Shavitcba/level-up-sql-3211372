@@ -6,4 +6,13 @@
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
 CREATE TABLE PartyAttendency
-(CustIdCustomerId INTEGER, PartySize INTEGER);
+(CustomerId INTEGER, PartySize INTEGER);
+
+
+ALTER TABLE PartyAttendency
+RENAME COLUMN CustIdCustomerId TO CustomerId;
+
+
+--DROP
+
+DROP TABLE [database_name.][schema_name.]table_name_1,
